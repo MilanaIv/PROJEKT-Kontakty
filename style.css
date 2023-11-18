@@ -24,20 +24,28 @@ h2{
 }
 
 img{
+	display: inline-block;
+	border-radius: 50%;
+	margin: 0 auto;	
+} 
+
+.img{
+	display: block;
 	border-radius: 50%;
 	margin: auto;
-	display: block;
-	
 }
+
 .card{
-	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
 }
+
 .contejner{
 	border: 2px solid rgb(163, 161, 161);
 	border-radius: 15px;
-	padding:0 15px;
-
-	box-sizing: border-box;
+	padding: 15px 15px;
+	
 }
 
 .text{
@@ -48,14 +56,14 @@ img{
 
 @media screen and (min-width: 540px) {
 	.card{
-		display: flex;
+		flex-direction: row;
 		flex-wrap: wrap;
-		gap: 20px;	
+			
 	}
 	
 	.contejner{
 		flex: 0 1 calc((100% - 20px) / 2);
-		margin: 0 0 15px 0;
+		flex-direction: row;
 	}
 	
 	img{
