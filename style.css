@@ -60,7 +60,6 @@ img{
 	
 	.contejner{
 		flex: 0 1 calc((100% - 20px) / 2);
-		flex-direction: row;
 		display: flex;
 		gap: 12px;
 	}
@@ -68,9 +67,7 @@ img{
 	img{
 		width: 90px;
 	}
-	.img{
-		flex: 0 0 90px;
-	}
+	
 
 	.text{
 		text-align: left;
